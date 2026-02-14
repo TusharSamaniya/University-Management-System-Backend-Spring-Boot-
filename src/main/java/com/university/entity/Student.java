@@ -6,13 +6,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.Data;
+
+
 
 @Entity
 @Table(name = "student")
-@AllArgsConstructor
-@NoArgsConstructor
+@Data
 public class Student {
 	
 	@Id
@@ -22,9 +22,9 @@ public class Student {
 	@Column(nullable = false)
 	private String StudentName;
 	@Column(nullable = false)
-	private Integer Class;
+	private Integer StudentClass;
 	@Column(nullable = false)
-	private Long Marks;
+	private Long StudentMarks;
 	@Column(nullable = false)
 	private boolean result;
 
