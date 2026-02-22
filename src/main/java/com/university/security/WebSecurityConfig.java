@@ -1,4 +1,4 @@
-package com.university.config;
+package com.university.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
